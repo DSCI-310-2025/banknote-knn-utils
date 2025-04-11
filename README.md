@@ -1,5 +1,5 @@
 # Banknote KNN Utils
-
+[![Codecov test coverage](https://codecov.io/gh/DSCI-310-2025/banknote-knn-utils/branch/main/graph/badge.svg)](https://codecov.io/gh/DSCI-310-2025/banknote-knn-utils)
 [![PyPI version](https://img.shields.io/badge/pypi-v0.1.5-blue.svg)](https://pypi.org/project/banknote-knn-utils/)
 [![Python versions](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://pypi.org/project/banknote-knn-utils/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
