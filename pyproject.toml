@@ -1,13 +1,9 @@
-[
-build-system
-]
+[build-system]
 requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[
-project
-]
-name = "banknote_utils"
+[project]
+name = "banknote-knn-utils"
 version = "0.1.0"
 description = "Utilities for banknote classification and analysis"
 readme = "README.md"
@@ -24,7 +20,6 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-
 dependencies = [
     "pandas>=1.0.0",
     "matplotlib>=3.0.0",
@@ -32,25 +27,17 @@ dependencies = [
     "scikit-learn>=1.0.0",
 ]
 
-[
-project.urls
-]
-"Homepage" = "https://github.com/DSCI-310-2025/banknote_utils"
-"Bug Tracker" = "https://github.com/DSCI-310-2025/banknote_utils/issues"
+[project.urls]
+"Homepage" = "https://github.com/DSCI-310-2025/banknote-knn-utils"
+"Bug Tracker" = "https://github.com/DSCI-310-2025/banknote-knn-utils/issues"
 
-[
-tool.pytest.ini_options
-]
+[tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = "test_*.py"
 
-[
-tool.setuptools.packages.find
-]
+[tool.setuptools.packages.find]
 where = ["."]
-include = ["banknote_utils*"]
+include = ["banknote_knn_utils*"]
 
-[
-tool.coverage.run
-]
-source = ["banknote_utils"]
+[tool.coverage.run]
+source = ["banknote_knn_utils"]
