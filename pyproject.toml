@@ -37,7 +37,7 @@ python_files = "test_*.py"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["banknote_knn_utils*"]
+include = ["banknote_utils*"]
 
 [tool.coverage.run]
-source = ["banknote_knn_utils"]
+source = ["banknote_utils"]
