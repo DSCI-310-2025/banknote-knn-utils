@@ -2,9 +2,8 @@ import os
 import pytest
 import sys
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
-
-from ensure_output_directory import ensure_output_directory  
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from banknote_utils.ensure_output_directory import ensure_output_directory
 
 @pytest.fixture
 def temp_output_prefix(tmp_path):

@@ -9,10 +9,10 @@ import pytest
 from sklearn.datasets import make_classification
 
 # Add the src directory to the Python path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # Import the functions to test
-from src.visualization_utils import (plot_histogram, create_count_table)
+from banknote_utils.visualization_utils import (plot_histogram, create_count_table)
 
 # Create a fixture for test data
 @pytest.fixture
