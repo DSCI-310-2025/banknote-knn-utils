@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-from src import ensure_output_directory
+from banknote_utils import ensure_output_directory
 
 def plot_histogram(dataset, feature, target_variable, labels=None, output_prefix=None, figsize=(8, 6)):
     """
