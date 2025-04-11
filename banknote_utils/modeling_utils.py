@@ -5,7 +5,7 @@ import os
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import cross_val_score
 from sklearn.metrics import confusion_matrix, classification_report
-from src import ensure_output_directory
+from banknote_utils import ensure_output_directory
 
 def evaluate_knn_cv(X_train, y_train, k_range=range(1, 26)):
     """
