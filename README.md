@@ -38,7 +38,7 @@ pip install banknote-knn-utils
 
 ```python
 import pandas as pd
-from banknote_utils import check_missing_value
+from banknote_utils.check_missing_value import check_missing_value
 
 # Load your banknote dataset
 data = pd.read_csv('banknote_data.csv')
@@ -50,7 +50,7 @@ clean_data = check_missing_value(data)
 ### Creating Visualizations
 
 ```python
-from banknote_utils import create_count_table, plot_histogram
+from banknote_utils.visualization_utils import create_count_table, plot_histogram
 
 # Create a count table of class distribution
 create_count_table(data, 'class', output_prefix='results/class_distribution')
@@ -63,7 +63,7 @@ plot_histogram(data, 'variance', 'class', labels=['Genuine', 'Counterfeit'],
 ### Training and Evaluating a KNN Model
 
 ```python
-from banknote_utils import evaluate_knn_cv, plot_knn_cv, train_knn_model, evaluate_model
+from banknote_utils.modeling_utils import evaluate_knn_cv, plot_knn_cv, train_knn_model, evaluate_model
 from sklearn.model_selection import train_test_split
 
 # Prepare your data
