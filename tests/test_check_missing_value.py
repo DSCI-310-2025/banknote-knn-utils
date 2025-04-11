@@ -4,10 +4,8 @@ import sys
 import pandas as pd
 import numpy as np
 
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src")))
-
-
-from check_missing_value import check_missing_value
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from banknote_utils.check_missing_value import check_missing_value
 
 @pytest.fixture
 # create test clean dataset 

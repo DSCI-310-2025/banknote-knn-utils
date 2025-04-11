@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('Agg') 
 import pytest
 import pandas as pd
 import numpy as np
@@ -9,10 +11,10 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.datasets import make_classification
 
 # Add the src directory to the Python path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 # Import the functions to test
-from src.modeling_utils import (
+from banknote_utils.modeling_utils import (
     evaluate_knn_cv,
     plot_knn_cv,
     train_knn_model,
