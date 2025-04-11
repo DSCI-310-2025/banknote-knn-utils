@@ -15,7 +15,7 @@ This package includes functions for:
 __version__ = "0.1.3"
 
 # Import functions from modules
-from .check_missing_value import check_missing_values
+from .check_missing_value import check_missing_value
 from .ensure_output_directory import ensure_output_directory
 from .modeling_utils import (
     evaluate_knn_cv,
@@ -29,7 +29,7 @@ from .visualization_utils import (
 )
 
 __all__ = [
-    "check_missing_values",
+    "check_missing_value",
     "ensure_output_directory",
     "evaluate_knn_cv",
     "plot_knn_cv",

@@ -12,7 +12,7 @@ Checking for Missing Values
 .. code-block:: python
 
     import pandas as pd
-    from banknote_utils import check_missing_values
+    from banknote_utils import check_missing_value
 
     # Create a sample dataframe with missing values
     df = pd.DataFrame({
@@ -21,7 +21,7 @@ Checking for Missing Values
     })
 
     # Check for missing values
-    missing_count = check_missing_values(df)
+    missing_count = check_missing_value(df)
     # Output: Found 2 missing values in the data.
     #         Column feature1: 1 missing values
     #         Column feature2: 1 missing values
