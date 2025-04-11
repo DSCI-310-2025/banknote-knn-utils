@@ -12,7 +12,7 @@ This package includes functions for:
 - Visualization utilities for exploratory data analysis
 """
 
-__version__ = "0.1.5"
+__version__ = "0.1.6"
 
 # Import functions from modules
 from .check_missing_value import check_missing_value
