@@ -11,11 +11,11 @@ def plot_histogram(dataset, feature, target_variable, labels=None, output_prefix
     ----------
     dataset : pandas.DataFrame or numpy.ndarray
         DataFrame containing the given feature to plot a histogram for
-    feature : pandas.Series or numpy.ndarray
+    feature : string
         Target variable to plot a histogram for
     labels : list of strings, optional
         Add custom labels for the histogram's legend. If None, use default labels.
-    output_path : str, optional
+    output_path : string, optional
         Path to save the histogram. If None, the plot is not saved.
     figsize : tuple, optional
         Figure size (width, height) in inches, by default (8, 6).
@@ -48,9 +48,9 @@ def create_count_table(dataset, target_variable, output_prefix=None):
     ----------
     dataset : pandas.DataFrame or numpy.ndarray
         DataFrame containing the given feature to plot a histogram for
-    target_variable : pandas.Series or numpy.ndarray
+    target_variable : string
         Target variable to plot a histogram for
-    output_path : str, optional
+    output_path : string, optional
         Path to save the count table. If None, the plot is not saved.
     
     Returns
